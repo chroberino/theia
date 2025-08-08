@@ -108,7 +108,7 @@ export class NotificationComponent extends React.Component<NotificationComponent
                                     <button key={messageId + `-action-${index}`} className='theia-button'
                                         data-message-id={messageId} data-action={action}
                                         onClick={this.onAction}>
-                                        {action}
+                                        {nls.localizeByDefault(action)}
                                     </button>
                                 ))}
                             </div>
